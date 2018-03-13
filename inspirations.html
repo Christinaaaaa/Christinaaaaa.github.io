@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">" 
+ <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  <style>    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #516;
+      color: pink;
+      padding: 10px;
+    }
+	body {
+		font-family: 'Abril Fatface', cursive;
+		font-size: 20px;
+		color: orange;
+	}
+	.left-side {
+		font-family: 'Berkshire Swash', cursive;
+	}
+	.top{
+		font-family: 'Dancing Script', cursive;
+	}
+	.status{
+		font-family: 'Playfair Display Sc', serif;
+		color: turquoise;
+	}
+	.vaca{
+		font-family: 'Rancho', cursive;
+		color: violet;
+		font-size: 25px;
+	}
+	td {
+    height: 75px; 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://78.media.tumblr.com/1b64bf2c27472a024e7eecd6a8d1de76/tumblr_omcik8WTcE1w3bg89o1_1280.jpg">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse top" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://78.media.tumblr.com/d70245444e2ae91385b18193ceaefc1b/tumblr_p53chnEORo1wkaj41o1_500.gif">Home</a></li>
+        <li><a href="https://78.media.tumblr.com/772855f3cf9bf76139431cec0dd4a550/tumblr_nyy3naHaxz1uhbshao1_500.png">Messages</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">     
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href=#><span class=""></span> </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container text-center">    
+  <div class="row">
+    <div class="col-sm-3 well">
+      <div class="well left-side">
+        <p><a href="https://www.pinterest.com/pinterest/">Hey! It's me :)</a></p>
+        <img src=https://s-media-cache-ak0.pinimg.com/originals/10/96/25/109625074481ec5ace314e5952884021.jpg class="img-circle" height="75" width="75" alt="Christina">
+      </div>
+      <div class="well left-side">
+        <p><a href="http://www.tasskickers.com/wp-content/uploads/2015/03/image14.png">Interests</a></p>
+        <p>
+          <span class="label label-default">Beauty</span>
+          <span class="label label-primary">Love</span>
+          <span class="label label-success">Fashion</span>
+          <span class="label label-info">Basketball</span>
+          <span class="label label-warning">Gaming</span>
+          <span class="label label-danger">Friends</span>
+        </p>
+      </div>
+      <div class="alert alert-success fade in left-side">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <p><strong>Aye!</strong></p>
+        There is someone lurking. catch them before they leave :)
+      </div>
+      <p><a href="http://www.tiffany.co.uk/jewelry">Jewellery</a></p>
+      <p><a href="http://www.health.com/food">Health/beauty</a></p>
+      <p><a href="https://www.zaful.com/">Clothing</a></p>
+    </div>
+	
+    <div class="col-sm-7">
+    
+      <div class="row status">
+        <div class="col-sm-12">
+          <div class="panel panel-default text-left">
+            <div class="panel-body">
+              <p contenteditable="true">Status:Good Things Take Time</p>
+              <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-thumbs-up"></span> Like
+              </button>     
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Ryan</p>
+           <img src="https://i.pinimg.com/736x/3a/0e/3e/3a0e3ecddae410fd3c77318451e31984--iphone-backgrounds-phone-wallpapers.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>The sun is a daily reminder that we too can rise again from the darkness, that we too can shine our light. -s. ajna</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Dion</p>
+           <img src="https://wallpapertag.com/wallpaper/full/d/6/4/263992-free-aesthetic-background-tumblr-1920x1080-picture.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>False hopes
+				lost dreams
+				not like on the movie screens.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Selena</p>
+           <img src="https://78.media.tumblr.com/b312252104a1c334055ad96f9d248ebd/tumblr_p08o8glakX1wd3q54o1_500.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>The hardest battle is between what you know in your head and what you feel in your heart.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well">
+           <p>Mel</p>
+           <img src="https://data.whicdn.com/images/267674485/superthumb.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="well">
+            <p>Self love isn't selfish, it's important.</p>
+          </div>
+        </div>
+      </div>     
+    </div>
+    <div class="col-sm-2 well vaca">
+      <div class="thumbnail vaca">
+        <p>Upcoming Events:</p>
+        <img src=https://www.iaspaper.net/wp-content/uploads/2017/12/Delhi-NEET-Counselling.jpg alt="Delhi" width="400" height="300">
+        <p><strong>Delhi</strong></p>
+        <p>March 16, 2018</p>
+        <button class="btn btn-primary info">Info</button>
+      </div>      
+      <div class="well vaca">
+        <p>You don't have to force positivity</p>
+      </div>
+      <div class="well vaca">
+        <p>Happiness looks gorgeous on you</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <h4>Leave a Comment:</h4>
+     <form id="commentForm">
+		  
+        <div class="form-group">
+          <label for="yourName">Name</label>
+          <input class="form-control" id="yourName" placeholder="Your name" maxlength="20">
+        </div>
+
+        <div class="form-group">
+          <label for="yourComment">Comment</label>
+          <input class="form-control" id="yourComment" placeholder="Your comment" maxlength="140">
+        </div>
+	      
+        <div class="form-group">
+          <label for="yourLink">Image source (optional)</label>
+          <input class="form-control" id="yourLink" placeholder="Your image source (optional)" maxlength="500">
+        </div>
+	      
+        <!-- When you click this button, trigger the submit event on this form. -->
+        <button type="submit" class="btn btn-default" onclick="alert('Thank you for submitting')">Submit</button>
+		
+      </form>
+      <br><br>
+	    
+      <p>Comments:</p>
+	    
+      <table>
+	<tr>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+		        <td><strong>Avatar</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="link">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Name</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="title">
+
+		</tbody>
+	    </table>
+	</td>
+	<td>
+	    <table>
+		<thead>
+		    <tr>
+			<td><strong>Comment</strong></td>
+		    </tr>
+		</thead>
+		<tbody id="remark">
+
+		</tbody>
+	    </table>
+	</td>
+	</tr>
+      </table>
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+  <script>
+    $(".info").on("click", function() {
+      alert("March 16th, 2018 getaway with my friends. Delhi here we come! :)");
+    });
+  </script>
+
+</body>
+</html>
