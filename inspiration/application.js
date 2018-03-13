@@ -1,10 +1,10 @@
 var config = {
-    apiKey: "AIzaSyD90XsWJOANcVOu11tyrWUt0aDv0EBysX0",
-    authDomain: "newcomments-4e8a0.firebaseapp.com",
-    databaseURL: "https://newcomments-4e8a0.firebaseio.com",
-    projectId: "newcomments-4e8a0",
-    storageBucket: "",
-    messagingSenderId: "182797535899"
+   apiKey: "AIzaSyBKdM2INM6-Q3EbiaENtV5cZzT6gu4t1LY",
+    authDomain: "inspirations-b370f.firebaseapp.com",
+    databaseURL: "https://inspirations-b370f.firebaseio.com",
+    projectId: "inspirations-b370f",
+    storageBucket: "inspirations-b370f.appspot.com",
+    messagingSenderId: "361257465665"
 };
 
 // Initialize your Firebase app
