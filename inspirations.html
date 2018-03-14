@@ -10,9 +10,8 @@
  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
   <style>    
     /* Set black background color, white text and some padding */
     footer {
@@ -21,12 +20,14 @@
       padding: 10px;
     }
 	body {
+		background-color: #F08080;
 		font-family: 'Abril Fatface', cursive;
 		font-size: 20px;
 		color: orange;
 	}
 	.left-side {
 		font-family: 'Berkshire Swash', cursive;
+		background-color: #73C6B6;
 	}
 	.top{
 		font-family: 'Dancing Script', cursive;
@@ -39,19 +40,10 @@
 		font-family: 'Rancho', cursive;
 		color: violet;
 		font-size: 25px;
+		background-color: #7997A8
+;
 	}
-	td {
-    height: 75px; 
-    }
-img {  
- border-radius: 50px;
- background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2000px-No_image_available.svg.png');
- height: 50px; 
-    } 
-    table {
-      margin-left: 20px;
-      font-size: 18px; 
-    }  	  
+	
   </style>
 </head>
 <body>
@@ -199,71 +191,15 @@ img {
 </div>
 
       <h4>Leave a Comment:</h4>
-     <form id="commentForm">
-		  
-        <div class="form-group">
-          <label for="yourName">Name</label>
-          <input class="form-control" id="yourName" placeholder="Your name" maxlength="20">
+      <form role="form">
+        <div class="form-group ">
+          <textarea class="form-control" rows="3" required></textarea>
         </div>
-
-        <div class="form-group">
-          <label for="yourComment">Comment</label>
-          <input class="form-control" id="yourComment" placeholder="Your comment" maxlength="140">
-        </div>
-	      
-        <div class="form-group">
-          <label for="yourLink">Image source (optional)</label>
-          <input class="form-control" id="yourLink" placeholder="Your image source (optional)" maxlength="500">
-        </div>
-	      
-        <!-- When you click this button, trigger the submit event on this form. -->
-        <button type="submit" class="btn btn-default" onclick="alert('Thank you for submitting')">Submit</button>
-		
+        <button type="submit" class="btn btn-success">Submit</button>
       </form>
       <br><br>
-	    
-      <p>Comments:</p>
-	    
-      <table>
-	<tr>
-	<td>
-	    <table>
-		<thead>
-		    <tr>
-		        <td><strong>Avatar</strong></td>
-		    </tr>
-		</thead>
-		<tbody id="link">
-
-		</tbody>
-	    </table>
-	</td>
-	<td>
-	    <table>
-		<thead>
-		    <tr>
-			<td><strong>Name</strong></td>
-		    </tr>
-		</thead>
-		<tbody id="title">
-
-		</tbody>
-	    </table>
-	</td>
-	<td>
-	    <table>
-		<thead>
-		    <tr>
-			<td><strong>Comment</strong></td>
-		    </tr>
-		</thead>
-		<tbody id="remark">
-
-		</tbody>
-	    </table>
-	</td>
-	</tr>
-      </table>
+      
+      <p><span class="badge">2</span> Comments:</p><br>
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
@@ -273,8 +209,7 @@ img {
       alert("March 16th, 2018 getaway with my friends. Delhi here we come! :)");
     });
   </script>
-<!-- Load the application script, which will save data to our Firebase app when we click the button. -->
-<script src="/application.js">
-</script>
+
 </body>
 </html>
+
